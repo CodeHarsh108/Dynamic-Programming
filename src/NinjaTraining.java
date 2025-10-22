@@ -11,7 +11,7 @@ public class NinjaTraining {
         dp[0][3] = Math.max(points[0][0], Math.max(points[0][1], points[0][2]));
 
 
-        for (int i = 1; i < n   ; i++) {
+        for (int i = 1; i < n; i++) {
             for (int last = 0; last <= 3; last++){
                 dp[i][last] = 0;
                 for (int task = 0; task <= 2; task++){
